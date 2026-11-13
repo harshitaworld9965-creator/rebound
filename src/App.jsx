@@ -28,7 +28,18 @@ export default function App() {
             </div>
 
             <figure className="hero-media">
-              <div className="media-placeholder" aria-hidden="true" />
+              <div className="media-placeholder">
+                <img
+                  src={`${import.meta.env.BASE_URL}full-rep.png`}
+                  alt="Lifter wearing navy training shorts at the bottom of a barbell squat"
+                  style={{
+                    display: 'block',
+                    width: '100%',
+                    height: '100%',
+                    objectFit: 'cover',
+                  }}
+                />
+              </div>
               <figcaption className="angle-caption" aria-live="polite">
                 {activeAngle.label}
               </figcaption>
